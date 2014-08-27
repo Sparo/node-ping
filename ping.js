@@ -14,12 +14,13 @@ fs.open(path, 'w', function(err, fd) {
         throw 'error opening file: ' + err;
     } else {
         setInterval(function () {
+            console.log("ping sent to the "+ target +" ...\n");
             session.pingHost(process.argv[2], function (err, target, d1, d2) {
                 if (err) {
-                    var cont = "------\n"+err+" "+(d2-d1)+"ms\n------------";
+                    var cont = "\n"+err+" "+(d2-d1)+"ms\n------------";
                     var buffer = new Buffer(cont);
                 } else {
-                    var cont = "------\n"+target+" "+(d2-d1)+"ms\n------------";
+                    var cont = "\n"+target+" "+(d2-d1)+"ms\n------------";
                     var buffer = new Buffer(cont);
                 }
                 fs.write(fd, buffer, 0, buffer.length, null, function(err) {
