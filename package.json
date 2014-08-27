@@ -8,7 +8,7 @@
     "email": "sparic.nenad@gmail.com"
   },
   "dependencies": {
-    "net-ping": "1.1.*",
+    "net-ping": "1.1.*"
   },
   "readmeFilename": "README.md"
 }
