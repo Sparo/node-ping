@@ -1,0 +1,14 @@
+{
+  "name": "node-ping",
+  "version": "0.1.0",
+  "description": "Pinging routes",
+  "main": "ping.js",
+  "author": {
+    "name": "Nenad Sparic",
+    "email": "sparic.nenad@gmail.com"
+  },
+  "dependencies": {
+    "net-ping": "1.1.*",
+  },
+  "readmeFilename": "README.md",
+}
