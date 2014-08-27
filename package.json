@@ -10,5 +10,5 @@
   "dependencies": {
     "net-ping": "1.1.*",
   },
-  "readmeFilename": "README.md",
+  "readmeFilename": "README.md"
 }
