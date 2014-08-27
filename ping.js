@@ -14,7 +14,8 @@ fs.open(path, 'w', function(err, fd) {
         throw 'error opening file: ' + err;
     } else {
         setInterval(function () {
-            console.log("ping sent to the "+ target +" ...\n");
+            console.log("ping sent to the "+ process.argv[2] +" ...\n");
+
             session.pingHost(process.argv[2], function (err, target, d1, d2) {
                 if (err) {
                     var cont = "\n"+err+" "+(d2-d1)+"ms\n------------";
