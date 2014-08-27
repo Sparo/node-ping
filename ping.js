@@ -32,15 +32,3 @@ fs.open(path, 'w', function(err, fd) {
         }, 1000);
     }
 });
-
-
-setInterval(function () {
-    session.pingHost('4.2.2.2', function (err, target, d1, d2) {
-        console.log("------------------------");
-        if (err) {
-            console.log(err);
-        } else {
-            console.log(target, d2-d1);
-        }
-    });
-}, 1000);
