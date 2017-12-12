@@ -8,7 +8,11 @@
     "email": "sparic.nenad@gmail.com"
   },
   "dependencies": {
-    "net-ping": "1.1.*"
+    "iso8583-smartvista": "*",
+    "loadsh": "*",
+    "lodash": "^3.10.1",
+    "node-xml2json": "^1.0.0",
+    "xml2json": "^0.10.0"
   },
   "readmeFilename": "README.md"
 }
